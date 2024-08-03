@@ -1,0 +1,31 @@
+{
+  "short_name": "TikTap",
+  "name": "TikTok Auto Tapper x FSEC 🏴‍☠️",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "https://www.tiktok.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.tiktok.com/*"],
+      "js": ["js/autotapper.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "options_page": "html/options.html",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "TikTok Auto Tapper x FSEC 🏴‍☠️"
+  },
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "64": "img/icon64.png",
+    "128": "img/icon128.png",
+    "256": "img/icon256.png"
+  },
+  "version": "1.2"
+}

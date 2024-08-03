@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TikTok AutoTapper by FSEC 🏴‍☠️</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+      #settings{
+        margin: 0 auto;
+        width: 60%;
+      }
+      input[type=number]{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        padding: 4px;
+      }
+      button{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        padding: 4px 10px;
+        min-width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="settings">
+      <h3>TikTok Auto Tapper x FSEC</h3>
+      <label for="speed">
+        Tap Speed (seconds): <input type="number" id="speed" min="0.25" value="0.25" />
+      </label>
+      <br>
+      <br>
+
+      <div id="status"></div>
+      <button id="save">Save</button>
+    </div>
+
+    <script src="../js/options.js"></script>
+  </body>
+</html>
+
